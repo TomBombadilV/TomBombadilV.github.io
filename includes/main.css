@@ -1,0 +1,320 @@
+/* --------------------------------- Fonts --------------------------------- */
+@font-face {
+    font-family: "Gotham";
+    src: url("fonts/Gotham.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "KG Happy Solid";
+    src: url("fonts/KGHAPPYSolid.ttf") format("truetype");
+}
+
+/* ------------------------------- KEY FRAMES ------------------------------ */
+@keyframes fadein {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {opacity:0;}
+    to {opacity:1;}
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {opacity:0;}
+    to {opacity:1;}
+}
+@-o-keyframes fadein { /* Opera */
+    from {opacity:0;}
+    to {opacity:1;}
+}
+
+/* --------------------------- Generic Elements ---------------------------- */
+:root {
+    --red: #DB3E11;
+    --light-red: #ff4d4d;
+}
+
+body {
+    color: black;
+    font: 15px/20px Gotham, Arial, sans-serif;
+    margin: 0px;
+
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+    animation: fadein 2s;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img, svg, div, table {
+    display: block;
+}
+
+header {
+    font: 35px 'KG Happy Solid', Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* --------------------------- Navigation Bar ------------------------------ */
+nav {
+    width: 100%;
+    text-align: right;
+}
+
+nav ul {
+    list-style: none;
+    padding: 40px 60px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+body.front-page nav ul li:nth-child(1) a,
+body.resume nav ul li:nth-child(2) a,
+body.about nav ul li:nth-child(3) a,
+body.contact nav ul li:nth-child(4) a {
+    color: var(--red);
+}
+
+nav ul li a {
+    padding-left: 40px;
+    font: 15px "KG Happy Solid", Arial, sans-serif;
+    color: #666;
+
+    -webkit-transition: color 0.2s linear;
+    -moz-transition: color 0.2s linear;
+    -o-transition: color 0.2s linear;
+    transition: color 0.2s linear;
+}
+
+nav ul li a:hover {
+    color: var(--light-red);
+}
+
+/* ------------------------------ Front Page ------------------------------- */
+body.front-page table {
+    max-width: 65%;
+    margin: 0 auto;
+    margin-top: 14vh;
+}
+
+body.front-page table td {
+    font-size: 25px;
+    line-height: 60px;
+    vertical-align: top;
+}
+
+body.front-page table td:nth-child(odd) {
+    padding-top: 20px;
+}
+
+body.front-page table span {
+    font: 50px 'KG Happy Solid', Arial, sans-serif;
+    padding: 0px 30px 0px 15px;
+}
+
+body.front-page table td a {
+    font-family: 'KG Happy Solid', Arial, sans-serif;
+    color: var(--red);
+}
+
+body.front-page table td a:hover {
+    color: var(--light-red);
+    -webkit-transition: color 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+body.front-page svg {
+    opacity: 0.2;
+    margin: 0 auto;
+    width: 1400px;
+}
+
+body.front-page section:nth-child(2):before {
+    content: "";
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 1) 85%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(49%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 1)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 49%, rgba(255, 255, 255, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 49%, rgba(255, 255, 255, 1) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 49%, rgba(255, 255, 255, 1) 100%);
+    /* IE10+ */
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 7%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 1) 93%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1);
+    /* IE6-9 */
+    z-index: 1;
+}
+
+/* ----------------------------- SVG Animation ----------------------------- */
+@keyframes scroll {
+    0%   {transform: translateX(80%)}
+    100% {transform: translateX(-80%)}
+}
+
+@keyframes scroll-lower {
+    0%   {transform: translateX(80%) translateY(20px)}
+    100% {transform: translateX(-80%) translateY(20px)}
+}
+
+@keyframes back-and-forth {
+    0%   {transform: translateX(0px)}
+    25%  {transform: translateX{-50px}}
+    75%  {transform: translateX(50px)}
+    100%  {transform: translateX{0px}}
+}
+
+@keyframes fade-in-out {
+    0%        {opacity: 0}
+    15%, 70%  {opacity: 1}
+    85%, 100% {opacity: 0}
+}
+
+@keyframes up-and-down {
+    0%   {transform: translateY(0px)}
+    50% {transform: translateY(10px)}
+    100%  {transform: translateY{0px}}
+}
+
+@keyframes swim {
+    0%   {transform: translateX(0%) translateY(420px) scale(-1,1) translateX(-100px)}
+    25% {transform: translateX(100%) translateY(420px) scale(-1,1) translateX(-100px)}
+    100% {transform: translateX(100%) translateY(420px) scale(-1,1) translateX(-100px)}
+}
+
+.clouds g:nth-child(even) .cloud path {
+    animation: scroll 50s linear infinite;
+}
+
+.clouds g:nth-child(odd) .cloud path {
+    animation: scroll 80s linear infinite;
+}
+
+.clouds-repeat .cloud path {
+    animation: scroll-lower 60s linear infinite;
+    animation-delay: -50s;
+}
+
+.clouds-repeat .cloud:nth-child(odd) path {
+    animation: scroll-lower 70s linear infinite;
+    animation-delay: -50s;
+}
+
+.waves path {
+    animation: up-and-down 5s linear infinite;
+}
+
+.waves path:nth-child(4n-3) {
+    animation-delay: -2s;
+}
+
+.waves path:nth-child(4n-2) {
+    animation-delay: -3s;
+}
+
+.waves path:nth-child(4n-1) {
+    animation-delay: -4s;
+}
+
+/*.shark {
+    transform: translateY(420px) scale(-1,1) translateX(-100px);
+    animation: swim 160s linear infinite;
+    animation-delay: 10s;
+}
+
+.shark-fin-wave {
+    fill: none;
+}
+.shark-fin-wave, .shark-fin { 
+    stroke: #222;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2.5px;
+}
+.shark-fin {
+    fill: white;
+}*/
+
+/* ------------------------------ Resume Page ------------------------------ */
+body.resume table {
+    margin: 0 auto;
+}
+
+body.resume table tr td {
+    padding: 10px;
+}
+
+body.resume table tr td:nth-child(1) {
+    color: var(--red);
+    font-weight: bold;
+    font-family: 'KG Happy Solid', arial, sans-serif;
+    text-transform: uppercase;
+    vertical-align: top;
+    text-align: right;
+}
+
+/* ----------------------------- Media Queries ----------------------------- */
+@media only screen and (min-width: 1700px) {
+    body.front-page svg {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    nav ul li a {
+        font-size: 25px;
+    }
+
+    body.front-page table td {
+        font-size: 35px;
+    }
+
+    body.front-page table span {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    body.front-page table {
+        max-width: 75%;
+    }
+
+    body.front-page table td {
+        font-size: 20px;
+        line-height: 50px;
+        vertical-align: 40px;
+    }
+
+    body.front-page table td:nth-child(odd) {
+        padding-top: 10px;
+    }
+
+    body.front-page table span {
+        font-size: 35px;
+        padding: 0px 15px 0px 10px;
+    }
+
+    body.front-page svg {
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 800px) {
+    body.front-page table td {
+        display: inline;
+    }
+}
