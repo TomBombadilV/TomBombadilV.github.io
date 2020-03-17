@@ -1,12 +1,12 @@
 /* --------------------------------- Fonts --------------------------------- */
 @font-face {
     font-family: "Gotham";
-    src: url("fonts/Gotham.ttf") format("truetype");
+    src: url("../fonts/Gotham.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "KG Happy Solid";
-    src: url("fonts/KGHAPPYSolid.ttf") format("truetype");
+    src: url("../fonts/KGHAPPYSolid.ttf") format("truetype");
 }
 
 /* ------------------------------- KEY FRAMES ------------------------------ */
