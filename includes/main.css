@@ -182,7 +182,7 @@ body.front-page section:nth-child(2):before {
     z-index: 1;
 }
 
-/* ----------------------------- SVG Animation ----------------------------- */
+/* --------------------------- SF SVG Animation ---------------------------- */
 @keyframes scroll {
     0%   {transform: translateX(80%)}
     100% {transform: translateX(-80%)}
@@ -271,13 +271,38 @@ body.front-page section:nth-child(2):before {
     fill: white;
 }*/
 
-/* */
+
+/* --------------------------- CA SVG Animation ---------------------------- */
+@keyframes offset {
+    to {
+      stroke-dashoffset: 0px;
+    }
+  }
+
+#california-outline {
+    fill: none;
+    stroke: rgba(0, 0, 0, 0.6);
+    stroke-width: 3px;
+    stroke-dasharray: 1510px;
+    stroke-dashoffset: 1510px;
+    animation: 3s offset linear forwards;
+}
+
+#heart {
+    opacity: 0;
+    -moz-animation: fadein 1s 3s; /* Firefox */
+    -webkit-animation: fadein 1s 3s; /* Safari and Chrome */
+    -o-animation: fadein 1s 3s; /* Opera */
+    animation: fadein 1s 3s forwards;
+}
+
+/* ---------------------------- General Pages ------------------------------ */
 body.resume main, body.about main, body.contact main {
     max-width: 60%;
     margin: 0 auto;
 }
 
-/* ------------------------------ About/Resume Page ------------------------------ */
+/* --------------------------- About/Resume Page --------------------------- */
 body.resume table {
     margin: 0 auto;
 }
@@ -294,7 +319,7 @@ body.resume table li {
 }
 
 body.resume table tr td {
-    padding: 10px;
+    padding-top: 10px;
 }
 
 body.resume table tr td:nth-child(1) {
@@ -305,11 +330,15 @@ body.resume table tr td:nth-child(1) {
     text-transform: uppercase;
     vertical-align: top;
     text-align: right;
-    padding-right: 20px;
+    padding-right: 25px;
+}
+
+body.resume table tr td:nth-child(2) {
+    padding: 10px;
 }
 
 .table-title {
-    /*font-weight: 700;*/
+    /*font-weight: 500;*/
 }
 
 /* ----------------------------- Media Queries ----------------------------- */
