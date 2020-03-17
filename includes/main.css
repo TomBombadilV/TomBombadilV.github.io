@@ -34,8 +34,10 @@
 }
 
 body {
+    background-color: #fffbf5;
     color: black;
     font: 15px/20px Gotham, Arial, sans-serif;
+    font: 20px/28px Gotham, Arial, sans-serif;
     margin: 0px;
 
     -moz-animation: fadein 2s; /* Firefox */
@@ -83,16 +85,14 @@ nav ul li {
 }
 
 body.front-page nav ul li:nth-child(1) a,
-body.resume nav ul li:nth-child(2) a,
-body.about nav ul li:nth-child(3) a,
-body.contact nav ul li:nth-child(4) a {
+body.about nav ul li:nth-child(2) a,
+body.contact nav ul li:nth-child(3) a {
     color: var(--red);
 }
 
 body.front-page nav ul li:nth-child(1) a:hover,
-body.resume nav ul li:nth-child(2) a:hover,
-body.about nav ul li:nth-child(3) a:hover,
-body.contact nav ul li:nth-child(4) a:hover {
+body.about nav ul li:nth-child(2) a:hover,
+body.contact nav ul li:nth-child(3) a:hover {
     color: black;
     color: var(--light-red);
 }
@@ -170,7 +170,7 @@ body.front-page section:nth-child(2):before {
     /* Opera 11.10+ */
     background: -ms-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 49%, rgba(255, 255, 255, 1) 100%);
     /* IE10+ */
-    background: linear-gradient(to right, rgba(255, 255, 255, 1) 7%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 1) 93%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 17%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 1) 85%);
     /* W3C */
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1);
     /* IE6-9 */
