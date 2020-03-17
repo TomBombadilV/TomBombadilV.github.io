@@ -88,21 +88,23 @@ nav ul li {
 }
 
 body.front-page nav ul li:nth-child(1) a,
-body.about nav ul li:nth-child(2) a,
-body.contact nav ul li:nth-child(3) a {
+body.resume nav ul li:nth-child(2) a,
+body.about nav ul li:nth-child(3) a,
+body.contact nav ul li:nth-child(4) a {
     color: var(--red);
 }
 
 body.front-page nav ul li:nth-child(1) a:hover,
-body.about nav ul li:nth-child(2) a:hover,
-body.contact nav ul li:nth-child(3) a:hover {
-    color: black;
+body.resume nav ul li:nth-child(2) a:hover,
+body.about nav ul li:nth-child(3) a:hover,
+body.contact nav ul li:nth-child(4) a:hover {
     color: var(--light-red);
 }
 
 nav ul li a {
     padding-left: 40px;
     font: 15px "KG Happy Solid", Arial, sans-serif;
+    font: 14px "KG Happy Solid", Arial, sans-serif;
     color: #777;
     text-transform: uppercase;
     -webkit-transition: color 0.2s linear;
@@ -173,7 +175,7 @@ body.front-page section:nth-child(2):before {
     /* Opera 11.10+ */
     background: -ms-linear-gradient(left, rgba(255, 251, 245, 1) 0%, rgba(255, 251, 245, 0) 49%, rgba(255, 251, 245, 1) 100%);
     /* IE10+ */
-    background: linear-gradient(to right, rgba(255, 251, 245, 1) 17%, rgba(255, 251, 245, 0) 25%, rgba(255, 251, 245, 0) 75%, rgba(255, 251, 245, 1) 85%);
+    background: linear-gradient(to right, rgba(255, 251, 245, 1) 15%, rgba(255, 251, 245, 0) 25%, rgba(255, 251, 245, 0) 75%, rgba(255, 251, 245, 1) 85%);
     /* W3C */
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1);
     /* IE6-9 */
@@ -270,7 +272,7 @@ body.front-page section:nth-child(2):before {
 }*/
 
 /* */
-body.about main, body.contact main {
+body.resume main, body.about main, body.contact main {
     max-width: 60%;
     margin: 0 auto;
 }
@@ -278,6 +280,17 @@ body.about main, body.contact main {
 /* ------------------------------ About/Resume Page ------------------------------ */
 body.resume table {
     margin: 0 auto;
+}
+
+body.resume table ul {
+    padding-left: 18px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+body.resume table li {
+    list-style-type: circle;
+    margin-bottom: 10px;
 }
 
 body.resume table tr td {
@@ -292,6 +305,11 @@ body.resume table tr td:nth-child(1) {
     text-transform: uppercase;
     vertical-align: top;
     text-align: right;
+    padding-right: 20px;
+}
+
+.table-title {
+    /*font-weight: 700;*/
 }
 
 /* ----------------------------- Media Queries ----------------------------- */
