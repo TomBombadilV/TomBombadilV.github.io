@@ -55,7 +55,7 @@ img, svg, div, table {
 
 header {
     font: 35px 'KG Happy Solid', Arial, sans-serif;
-    text-align: center;
+    /*text-align: center;*/
     margin-bottom: 30px;
 }
 
@@ -89,10 +89,18 @@ body.contact nav ul li:nth-child(4) a {
     color: var(--red);
 }
 
+body.front-page nav ul li:nth-child(1) a:hover,
+body.resume nav ul li:nth-child(2) a:hover,
+body.about nav ul li:nth-child(3) a:hover,
+body.contact nav ul li:nth-child(4) a:hover {
+    color: black;
+    color: var(--light-red);
+}
+
 nav ul li a {
     padding-left: 40px;
     font: 15px "KG Happy Solid", Arial, sans-serif;
-    color: #666;
+    color: #777;
 
     -webkit-transition: color 0.2s linear;
     -moz-transition: color 0.2s linear;
@@ -142,7 +150,9 @@ body.front-page table td a:hover {
 body.front-page svg {
     opacity: 0.2;
     margin: 0 auto;
-    width: 1400px;
+    margin-top: 30px;
+    /*width: 1400px;*/
+    width: 1250px;
 }
 
 body.front-page section:nth-child(2):before {
@@ -256,7 +266,13 @@ body.front-page section:nth-child(2):before {
     fill: white;
 }*/
 
-/* ------------------------------ Resume Page ------------------------------ */
+/* */
+body.about main, body.contact main {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+/* ------------------------------ About/Resume Page ------------------------------ */
 body.resume table {
     margin: 0 auto;
 }
