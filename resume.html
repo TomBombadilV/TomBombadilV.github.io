@@ -3,6 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <title>Carolyn Chan</title>
+        <!---------------------- Need JQuery/Boostrap for simple collapsing ---------------------->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <!-- Excuse You. -->
         <link href="includes/main.css" rel="stylesheet" type="text/css">
     </head>
     <body class="resume">
@@ -29,20 +34,41 @@
                     <tr>
                         <td>Experience</td>
                         <td>
-                            <span class="table-title">Cracking Data Science <em>Co-Founder, Software Engineer</em></span><br>
-                            <ul>
-                                <li>Developed database schemas to model application requirements</li>
-                                <li>Developed DRY, modularized application functions including user accounts and authentication, filtering, voting, and commenting systems, and content submission with Python 3 and Django framework</li>
-                                <li>Designed responsive, intuitive user interface, with syntax formatting, using Bootstrap, AJAX, HTML5, CSS3</li>
-                                <li>Set up continuous integration with Github, Docker containerization, and Azure Cloud Services via Github Actions</li>
-                            </ul>
-                            
-                            <span class="table-title">Splunk Inc. <em>Software Engineer Intern</em></span>
-                            <ul>
-                                <li>Incorporated Google’s memory error detection tool AddressSanitizer into Splunk’s build system</li>
-                                <li>Resolved memory conflicts in the core product discovered by the tool during unit and QA tests</li>
-                                <li>Implemented a memory profiler as a standalone static library, and created effective visualization of profiler’s output</li>
-                            </ul>
+                            <div class="panel-group" id="accordion">
+                                <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" >Cracking Data Science <em>Co-Founder, Software Engineer</em></a><br>
+                                    </h4>
+                                  </div>
+                                  <div id="collapse1" class="panel-collapse collapse collapsed">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li>Developed database schemas to model application requirements</li>
+                                                <li>Developed DRY, modularized application functions including user accounts and authentication, filtering, voting, and commenting systems, and content submission with Python 3 and Django framework</li>
+                                                <li>Designed responsive, intuitive user interface, with syntax formatting, using Bootstrap, AJAX, HTML5, CSS3</li>
+                                                <li>Set up continuous integration with Github, Docker containerization, and Azure Cloud Services via Github Actions</li>
+                                            </ul>
+                                        </div>
+                                  </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                      <h4 class="panel-title">
+                                          <a data-toggle="collapse" data-parent="#accordion" herf="#collapse-2">Splunk <em>Software Engineer Intern</em></a><br>
+                                      </h4>
+                                    </div>
+                                    <div id="collapse-2" class="panel-collapse collapse collapsed">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li>Incorporated Google’s memory error detection tool AddressSanitizer into Splunk’s build system, later shipped to ___</li>
+                                                <li>Resolved memory conflicts in the core product discovered by the tool during unit and QA tests</li>
+                                                <li>Implemented a memory profiler as a standalone static library, and created effective visualization of profiler’s output</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                  </div>
+                              </div>
                         </td>
                     </tr>
                     <tr>
