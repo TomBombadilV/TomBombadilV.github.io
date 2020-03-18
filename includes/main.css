@@ -324,7 +324,7 @@ body.about svg {
     stroke: rgba(0, 0, 0, 1);
     stroke-width: 3px;
     stroke-dasharray: 1510px;
-    stroke-dashoffset: -1510px;
+    stroke-dashoffset: 1510px;
 
     -moz-animation: 3s offset linear forwards;; /* Firefox */
     -webkit-animation: 3s offset linear forwards;; /* Safari and Chrome */
