@@ -49,7 +49,15 @@ body {
 
 a {
     text-decoration: none;
-    color: black;
+    color: var(--red);
+}
+
+a:hover {
+    color: var(--light-red);
+    -webkit-transition: color 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
 }
 
 img, svg, div, table {
@@ -61,6 +69,10 @@ header {
     /*text-align: center;*/
     margin-bottom: 30px;
     text-transform: uppercase;
+}
+
+ul li {
+    list-style-type: circle;
 }
 
 /* -------------------------------- Logo ----------------------------------- */
@@ -92,13 +104,6 @@ body.resume nav ul li:nth-child(2) a,
 body.about nav ul li:nth-child(3) a,
 body.contact nav ul li:nth-child(4) a {
     color: var(--red);
-}
-
-body.front-page nav ul li:nth-child(1) a:hover,
-body.resume nav ul li:nth-child(2) a:hover,
-body.about nav ul li:nth-child(3) a:hover,
-body.contact nav ul li:nth-child(4) a:hover {
-    color: var(--light-red);
 }
 
 nav ul li a {
@@ -141,7 +146,7 @@ body.front-page table span {
 
 body.front-page table td a {
     font-family: 'KG Happy Solid', Arial, sans-serif;
-    color: var(--red);
+    /*color: var(--red);*/
 }
 
 body.front-page table td a:hover {
@@ -290,7 +295,7 @@ body.about svg {
     stroke-width: 3px;
     stroke-dasharray: 1510px;
     stroke-dashoffset: -1510px;
-    animation: 3s offset 0.5s linear forwards;
+    animation: 3s offset linear forwards;
 }
 
 #heart {
@@ -320,7 +325,6 @@ body.resume table ul {
 }
 
 body.resume table li {
-    list-style-type: circle;
     margin-bottom: 10px;
 }
 
@@ -360,6 +364,11 @@ body.about main div:nth-child(2) {
 body.about main div:nth-child(3) {
     float: right;
     width: 30%;
+}
+
+body.about main a {
+    font-family: 'KG Happy Solid';
+    font-size: 18px;
 }
 
 /* ----------------------------- Media Queries ----------------------------- */
