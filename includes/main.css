@@ -60,13 +60,12 @@ body {
 }
 
 a {
-    text-decoration: none;
+    /* !important to override pesky Bootstrap css */
+    text-decoration: none !important;
     color: var(--red);
 }
 
 a:hover {
-    text-decoration: none;
-    /*color: var(--light-red);*/
     -webkit-transition: color 0.2s linear;
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
@@ -409,10 +408,11 @@ body.resume table tr td:nth-child(2) {
     font-size: 15px;    
 }
 
+/* "left" property is for slidein animation */
 .python { left: -75%; width: 75%; }
 .django { left: -60%; width: 60%; }
 .javascript { left: -40%; width: 40%; }
-.html5 { left: -90%; width: 90%; }
+.html5 { left: -80%; width: 80%; }
 .css3 { left: -50%; width: 50%; }
 .jquery { left: -40%; width: 40%; }
 .react { left: -0%; width: 0%; }
@@ -433,11 +433,15 @@ body.resume table tr td:nth-child(2) {
 }
 
 .panel-default>.panel-heading {
+    color: black;
     background-color: rgba(0,0,0,0);
     border: none;
     padding: 0px;
 }
 
+.panel-default>.panel-heading+.panel-collapse>.panel-body {
+    border-top: 0px;
+}
 
 /* --------------------------- About Page ---------------------------- */
 body.about main div:nth-child(2) {
