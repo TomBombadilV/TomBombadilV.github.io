@@ -303,7 +303,7 @@ body.about svg {
     -moz-animation: fadein 1s 3s; /* Firefox */
     -webkit-animation: fadein 1s 3s; /* Safari and Chrome */
     -o-animation: fadein 1s 3s; /* Opera */
-    animation: fadein 1s 3.5s forwards;
+    animation: fadein 1s 3s forwards;
 }
 
 /* ---------------------------- General Pages ------------------------------ */
@@ -369,6 +369,10 @@ body.about main div:nth-child(3) {
 body.about main a {
     font-family: 'KG Happy Solid';
     font-size: 18px;
+}
+
+body.about div p:nth-child(2) {
+    margin: 40px 0px;
 }
 
 /* ----------------------------- Media Queries ----------------------------- */
