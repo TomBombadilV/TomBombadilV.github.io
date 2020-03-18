@@ -208,7 +208,7 @@ body.front-page section:nth-child(2):before {
 }
 
 /* --------------------------- SF SVG Animation ---------------------------- */
-@keyframes scroll {
+/*@keyframes scroll {
     0%   {transform: translateX(80%)}
     100% {transform: translateX(-80%)}
 }
@@ -216,6 +216,16 @@ body.front-page section:nth-child(2):before {
 @keyframes scroll-lower {
     0%   {transform: translateX(80%) translateY(20px)}
     100% {transform: translateX(-80%) translateY(20px)}
+}*/
+
+@keyframes scroll {
+    0%   {transform: translateX(-80%)}
+    100% {transform: translateX(80%)}
+}
+
+@keyframes scroll-lower {
+    0%   {transform: translateX(-80%) translateY(20px)}
+    100% {transform: translateX(80%) translateY(20px)}
 }
 
 @keyframes back-and-forth {
@@ -315,14 +325,18 @@ body.about svg {
     stroke-width: 3px;
     stroke-dasharray: 1510px;
     stroke-dashoffset: -1510px;
+
+    -moz-animation: 3s offset linear forwards;; /* Firefox */
+    -webkit-animation: 3s offset linear forwards;; /* Safari and Chrome */
+    -o-animation: 3s offset linear forwards;; /* Opera */
     animation: 3s offset linear forwards;
 }
 
 #heart {
     opacity: 0;
-    -moz-animation: fadein 1s 3s; /* Firefox */
-    -webkit-animation: fadein 1s 3s; /* Safari and Chrome */
-    -o-animation: fadein 1s 3s; /* Opera */
+    -moz-animation: fadein 1s 3s forwards; /* Firefox */
+    -webkit-animation: fadein 1s 3s forwards; /* Safari and Chrome */
+    -o-animation: fadein 1s 3s forwards; /* Opera */
     animation: fadein 1s 3s forwards;
 }
 
