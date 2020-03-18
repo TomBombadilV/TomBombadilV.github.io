@@ -113,8 +113,7 @@ nav ul li {
 
 body.front-page nav ul li:nth-child(1) a,
 body.resume nav ul li:nth-child(2) a,
-body.about nav ul li:nth-child(3) a,
-body.contact nav ul li:nth-child(4) a {
+body.about nav ul li:nth-child(3) a {
     color: var(--red);
 }
 
@@ -357,7 +356,7 @@ body.resume table tr td:nth-child(2) {
 
 body.resume table tr td:nth-child(1),
 body.resume table tr td:nth-child(2) {
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 /*.table-title {
@@ -386,6 +385,7 @@ body.resume table tr td:nth-child(2) {
     -webkit-animation: slideright 1s forwards; /* Safari and Chrome */
     -o-animation: slideright 1s forwards; /* Opera */
     animation: slideright 1s forwards;
+
 }
 
 .skill-label {
@@ -407,6 +407,8 @@ body.resume table tr td:nth-child(2) {
 .docker { left: -25%; width: 25%; }
 .git { left: -60%; width: 60%; }
 .regex { left: -50%; width: 50%; }
+.ps { left: -50%; width: 30%; }
+.ill { left: -50%; width: 10%; }
 
 
 /* --------------------------- About Page ---------------------------- */
