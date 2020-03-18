@@ -102,7 +102,7 @@ body.contact nav ul li:nth-child(4) a:hover {
 }
 
 nav ul li a {
-    padding-left: 40px;
+    margin-left: 40px;
     font: 15px "KG Happy Solid", Arial, sans-serif;
     font: 14px "KG Happy Solid", Arial, sans-serif;
     color: #777;
@@ -279,13 +279,18 @@ body.front-page section:nth-child(2):before {
     }
   }
 
+body.about svg {
+    width: 300px;
+    height: 350px;
+}
+
 #california-outline {
     fill: none;
-    stroke: rgba(0, 0, 0, 0.6);
+    stroke: rgba(0, 0, 0, 1);
     stroke-width: 3px;
     stroke-dasharray: 1510px;
-    stroke-dashoffset: 1510px;
-    animation: 3s offset linear forwards;
+    stroke-dashoffset: -1510px;
+    animation: 3s offset 0.5s linear forwards;
 }
 
 #heart {
@@ -293,7 +298,7 @@ body.front-page section:nth-child(2):before {
     -moz-animation: fadein 1s 3s; /* Firefox */
     -webkit-animation: fadein 1s 3s; /* Safari and Chrome */
     -o-animation: fadein 1s 3s; /* Opera */
-    animation: fadein 1s 3s forwards;
+    animation: fadein 1s 3.5s forwards;
 }
 
 /* ---------------------------- General Pages ------------------------------ */
@@ -302,24 +307,21 @@ body.resume main, body.about main, body.contact main {
     margin: 0 auto;
 }
 
-/* --------------------------- About/Resume Page --------------------------- */
+/* --------------------------- Resume Page --------------------------- */
 body.resume table {
     margin: 0 auto;
 }
 
 body.resume table ul {
-    padding-left: 18px;
+    padding-left: 22px;
     margin-top: 10px;
     margin-bottom: 20px;
+    color: #666;
 }
 
 body.resume table li {
     list-style-type: circle;
     margin-bottom: 10px;
-}
-
-body.resume table tr td {
-    padding-top: 10px;
 }
 
 body.resume table tr td:nth-child(1) {
@@ -337,8 +339,27 @@ body.resume table tr td:nth-child(2) {
     padding: 10px;
 }
 
+body.resume table tr td:nth-child(1),
+body.resume table tr td:nth-child(2) {
+    padding-top: 20px;
+}
+
 .table-title {
     /*font-weight: 500;*/
+}
+
+/* --------------------------- About Page ---------------------------- */
+body.about main div:nth-child(2) {
+    display: inline-block;
+    width: 69%;
+    margin: 0px;
+    vertical-align: top;
+
+}
+
+body.about main div:nth-child(3) {
+    float: right;
+    width: 30%;
 }
 
 /* ----------------------------- Media Queries ----------------------------- */
