@@ -41,9 +41,11 @@
 /* --------------------------- Generic Elements ---------------------------- */
 :root {
     --red: #DB3E11;
-    --light-red: #ff4d4d;
+    --bright-red: #ff4d4d;
+    --dark-red: #ce2e00;
     --cream: #fffbf5;
     --dark-cream: #fbf4ea;
+    --dark-cream: #fbf3e7;
 }
 
 body {
@@ -115,7 +117,7 @@ rule will override hover rule */
 body.front-page nav ul li:nth-child(1) a:hover,
 body.resume nav ul li:nth-child(2) a:hover,
 body.about nav ul li:nth-child(3) a:hover {
-    color: var(--light-red);
+    color: var(--bright-red);
 }
 
 nav ul li a {
@@ -131,7 +133,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: var(--light-red);
+    color: var(--bright-red);
 }
 
 /* ---------------------------- General Pages ------------------------------ */
@@ -168,7 +170,7 @@ body.front-page table td a {
 }
 
 body.front-page table td a:hover {
-    color: var(--light-red);
+    color: var(--bright-red);
     -webkit-transition: color 0.2s linear;
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
@@ -388,7 +390,15 @@ body.resume table tr td:nth-child(2) {
     position: absolute;
     display: block;
     height: 100%;
+    opacity: 0.8;
     background-color: var(--red);
+    background: repeating-linear-gradient(
+        45deg,
+        var(--dark-red),
+        var(--dark-red) 10px,
+        var(--red) 10px,
+        var(--red) 20px
+        );
     /*border-radius: 0 8px 8px 0;*/
     border-radius: 15px;
     -moz-animation: slideright 1s forwards; /* Firefox */
@@ -441,6 +451,10 @@ body.resume table tr td:nth-child(2) {
 
 .panel-default>.panel-heading+.panel-collapse>.panel-body {
     border-top: 0px;
+}
+
+.panel-body {
+    padding-top: 0px;
 }
 
 /* --------------------------- About Page ---------------------------- */
