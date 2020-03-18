@@ -79,20 +79,13 @@ img, svg, div, table {
 header {
     font: 35px 'KG Happy Solid', Arial, sans-serif;
     /*text-align: center;*/
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-transform: uppercase;
 }
 
 ul li {
     list-style-type: circle;
 }
-
-/* -------------------------------- Logo ----------------------------------- */
-/*#logo {
-    height: 50px;
-    margin: 40px 50px;
-    float: left;
-}*/
 
 /* --------------------------- Navigation Bar ------------------------------ */
 nav {
@@ -131,6 +124,12 @@ nav ul li a {
 
 nav ul li a:hover {
     color: var(--light-red);
+}
+
+/* ---------------------------- General Pages ------------------------------ */
+body:not(.front-page) main {
+    max-width: 60%;
+    margin: 0 auto;
 }
 
 /* ------------------------------ Front Page ------------------------------- */
@@ -317,15 +316,14 @@ body.about svg {
     animation: fadein 1s 3s forwards;
 }
 
-/* ---------------------------- General Pages ------------------------------ */
-body.resume main, body.about main, body.contact main {
-    max-width: 60%;
-    margin: 0 auto;
+/* --------------------------- Resume Page --------------------------- */
+body.resume main {
+    max-width: 50%;
 }
 
-/* --------------------------- Resume Page --------------------------- */
 body.resume table {
     margin: 0 auto;
+    margin-bottom: 75px;
 }
 
 body.resume table ul {
@@ -404,9 +402,7 @@ body.resume table tr td:nth-child(2) {
 .html5 { left: -90%; width: 90%; }
 .css3 { left: -50%; width: 50%; }
 .jquery { left: -40%; width: 40%; }
-.docker { left: -25%; width: 25%; }
-.git { left: -60%; width: 60%; }
-.regex { left: -50%; width: 50%; }
+.react { left: -0%; width: 0%; }
 .ps { left: -50%; width: 30%; }
 .ill { left: -50%; width: 10%; }
 
@@ -431,6 +427,14 @@ body.about main a {
 
 body.about div p:nth-child(2) {
     margin: 40px 0px;
+}
+
+body.about div p:nth-child(3) {
+    margin-bottom: 10px;
+}
+
+body.about main ul {
+    margin: 0px;
 }
 
 /* ----------------------------- Media Queries ----------------------------- */
