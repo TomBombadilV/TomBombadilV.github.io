@@ -455,7 +455,7 @@ body.resume table tr td:nth-child(2) {
 .html5 { left: -80%; width: 80%; }
 .css3 { left: -50%; width: 50%; }
 .jquery { left: -40%; width: 40%; }
-.react { left: -0%; width: 0%; }
+.react { left: -5%; width: 5%; }
 .ps { left: -50%; width: 30%; }
 .ill { left: -50%; width: 10%; }
 
@@ -469,13 +469,21 @@ body.resume table tr td:nth-child(2) {
 
 .panel-heading a.collapsed:after {
     content: '+';
+   
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
 }
 
-.panel-heading a:after:hover {
+.panel-heading a:hover:after {
     color: var(--bright-red);
+
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
 }
-
-
 
 /*---  Override Boostrap CSS  ---*/
 .panel-title {
@@ -502,7 +510,8 @@ body.resume table tr td:nth-child(2) {
 }
 
 .panel-body {
-    padding-top: 0px;
+    padding-top: 5px;
+    padding-bottom: 0px;
 }
 /*---  End Override Boostrap CSS  ---*/
 
