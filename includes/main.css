@@ -579,7 +579,8 @@ body.about main ul {
         font-size: 50px;
     }
 
-    body {
+    body, 
+    .panel-title {
         font-size: 30px;
         line-height: 50px;
     }
@@ -633,20 +634,16 @@ body.about main ul {
     }
 
     body.resume main {
-        max-width: 75%;
+        max-width: 80%;
     }
 
     body.resume table tr td:nth-child(1) {
-        font-size: 20px;
-    }
-
-    .panel-title {
-        font-size: 30px;
-        line-height: 50px;
+        font-size: 22px;
+        white-space: normal;
     }
 
     .skill-label {
-        font-size: 18px;
+        font-size: 20px;
     }
     
 }
