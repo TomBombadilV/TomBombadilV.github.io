@@ -592,18 +592,17 @@ body.about main ul {
     body.front-page table tr td:nth-child(2) {
         height: 20px;
         float: left;
-        margin-bottom: 50px;
+        margin-bottom: 70px;
+    }
+
+    body.front-page table tr td:nth-child(2) {
+        margin-top: 10px;
     }
 
     body.front-page table tr td:nth-child(3) {
         display: block;
         width: 100%;
         float: left;
-
-    }
-
-    body.front-page table td a {
-        /*font-size: 30px;*/
     }
 
     body.front-page table td:nth-child(odd) {
