@@ -433,10 +433,10 @@ body.resume table tr td:nth-child(2) {
 
 
     border-radius: 15px;
-    -moz-animation: slideright 1s forwards; /* Firefox */
-    -webkit-animation: slideright 1s forwards; /* Safari and Chrome */
-    -o-animation: slideright 1s forwards; /* Opera */
-    animation: slideright 1s forwards;
+    -moz-animation: slideright 1s 1s forwards; /* Firefox */
+    -webkit-animation: slideright 1s 1s forwards; /* Safari and Chrome */
+    -o-animation: slideright 1s 1s forwards; /* Opera */
+    animation: slideright 1s 1s forwards;
 
 }
 
@@ -599,7 +599,7 @@ body.about main ul {
         font-size: 20px;
         font-size: 50px;
         line-height: 50px;
-        line-height: 100px;
+        line-height: 120px;
         vertical-align: 40px;
     }
 
@@ -639,7 +639,7 @@ body.about main ul {
     body.resume main,
     body.about main {
         max-width: 80%;
-        margin-top: 100px;
+        margin-top: 70px;
     }
 
     body.resume table tr td:nth-child(1) {
