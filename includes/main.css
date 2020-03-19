@@ -575,6 +575,11 @@ body.about main ul {
 }
 
 @media only screen and (max-width: 1300px) {
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
     header {
         font-size: 50px;
     }
