@@ -577,7 +577,7 @@ body.about main ul {
 @media only screen and (max-width: 1300px) {
 
     nav ul li a {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     header {
@@ -642,13 +642,31 @@ body.about main ul {
         margin-top: 70px;
     }
 
+    body.resume, .panel-title {
+        font-size: 40px;
+        line-height: 80px;
+    }
+
     body.resume table tr td:nth-child(1) {
-        font-size: 22px;
+        font-size: 40px;
         white-space: normal;
+        float: left;
+    }
+
+    body.resume table tr td:nth-child(2) {
+        display: block;
+       float: left;
+       width: 100%;
+       padding-top: 5px;
+    }
+
+    .skill {
+        height: 75px;
     }
 
     .skill-label {
-        font-size: 20px;
+        font-size: 25px;
+        line-height: 75px;
     }
 
     body.about main div:nth-child(2),
