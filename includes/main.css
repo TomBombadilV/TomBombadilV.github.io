@@ -575,6 +575,9 @@ body.about main ul {
 }
 
 @media only screen and (max-width: 1300px) {
+    nav {
+        margin-top: 50px;
+    }
 
     nav ul li a {
         font-size: 25px;
@@ -584,8 +587,7 @@ body.about main ul {
         font-size: 60px;
     }
 
-    body, 
-    .panel-title {
+    body {
         font-size: 30px;
         line-height: 50px;
     }
@@ -647,8 +649,12 @@ body.about main ul {
         line-height: 80px;
     }
 
+    body.resume table {
+        margin-top: 50px;
+    }
+
     body.resume table tr td:nth-child(1) {
-        font-size: 40px;
+        font-size: 35px;
         white-space: normal;
         float: left;
     }
