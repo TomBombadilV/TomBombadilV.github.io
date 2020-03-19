@@ -577,7 +577,7 @@ body.about main ul {
 @media only screen and (max-width: 1300px) {
     body.front-page table {
         max-width: 75%;
-        margin-top: 100px;
+        margin-top: 200px;
     }
 
     body.front-page table td {
