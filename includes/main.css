@@ -556,7 +556,7 @@ body.about main ul {
 /* ----------------------------- Media Queries ----------------------------- */
 @media only screen and (min-width: 2000px) {
     nav ul li a {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     body.front-page table td {
@@ -571,6 +571,16 @@ body.about main ul {
 @media only screen and (min-width: 1700px) {
     body.front-page svg {
         width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1500px) {
+    body.resume main {
+        max-width: 70%;
+    }
+
+    body.about main {
+        max-width: 65%;
     }
 }
 
@@ -598,10 +608,8 @@ body.about main ul {
     }
 
     body.front-page table td {
-        font-size: 20px;
-        font-size: 50px;
-        line-height: 50px;
-        line-height: 120px;
+        font-size: 40px;
+        line-height: 100px;
         vertical-align: 40px;
     }
 
