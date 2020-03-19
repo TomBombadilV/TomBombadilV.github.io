@@ -56,8 +56,10 @@
     /* Lighter yellow */
     --cream: #fcf8ee;
     --dark-cream: #fbf4ea;
-    --dark-cream: #fbf3e7;
-    --dark-cream: #f5ebd2;
+    /*--dark-cream: #fbf3e7;
+    --dark-cream: #f5eedc;
+    --dark-cream: #f5ebd2;*/
+    --dark-cream: #f1eada;
 }
 
 body {
@@ -552,12 +554,6 @@ body.about main ul {
 }
 
 /* ----------------------------- Media Queries ----------------------------- */
-@media only screen and (min-width: 1700px) {
-    body.front-page svg {
-        width: 80%;
-    }
-}
-
 @media only screen and (min-width: 2000px) {
     nav ul li a {
         font-size: 25px;
@@ -572,15 +568,42 @@ body.about main ul {
     }
 }
 
+@media only screen and (min-width: 1700px) {
+    body.front-page svg {
+        width: 80%;
+    }
+}
+
 @media only screen and (max-width: 1300px) {
     body.front-page table {
         max-width: 75%;
+        margin-top: 100px;
     }
 
     body.front-page table td {
         font-size: 20px;
+        font-size: 40px;
         line-height: 50px;
+        line-height: 100px;
         vertical-align: 40px;
+    }
+
+    body.front-page table tr td:nth-child(1),
+    body.front-page table tr td:nth-child(2) {
+        height: 20px;
+        float: left;
+        margin-bottom: 50px;
+    }
+
+    body.front-page table tr td:nth-child(3) {
+        display: block;
+        width: 100%;
+        float: left;
+
+    }
+
+    body.front-page table td a {
+        /*font-size: 30px;*/
     }
 
     body.front-page table td:nth-child(odd) {
@@ -589,11 +612,16 @@ body.about main ul {
 
     body.front-page table span {
         font-size: 35px;
+        font-size: 50px;
         padding: 0px 15px 0px 10px;
     }
 
     body.front-page svg {
         width: 100%;
+    }
+
+    body.front-page section:nth-child(2):before {
+        display: none;
     }
     
 }
