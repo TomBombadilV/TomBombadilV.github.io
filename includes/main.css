@@ -657,6 +657,8 @@ body.about main ul {
     }
 
     body.front-page section:nth-child(2):before {
+        height: 30vh;
+
         background: -moz-linear-gradient(left, var(--cream) 0%, var(--cream) 3%, rgba(252,248,238,0) 20%, rgba(252,248,238,0) 80%, var(--cream) 100%); /* FF3.6-15 */
         background: -webkit-linear-gradient(left, var(--cream) 0%,var(--cream) 3%,rgba(252,248,238,0) 20%,rgba(252,248,238,0) 80%,var(--cream) 100%); /* Chrome10-25,Safari5.1-6 */
         background: linear-gradient(to right, var(--cream) 0%,var(--cream) 3%,rgba(252,248,238,0) 20%,rgba(252,248,238,0) 80%,var(--cream) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -678,6 +680,10 @@ body.about main ul {
     body.front-page table tr td,
     body.front-page table span {
         line-height: 35px;
+    }
+
+    body.front-page section:nth-child(2):before {
+        height: 15vh;
     }
 }
 
