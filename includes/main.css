@@ -566,6 +566,7 @@ body.about div p:nth-child(3) {
 
 body.about main ul {
     margin: 0px;
+    padding-left: 22px;
 }
 
 /* ----------------------------- Media Queries ----------------------------- */
@@ -701,7 +702,7 @@ body.about main ul {
     }
 
     header {
-        margin-bottom: 7px;
+        margin-bottom: 20px;
     }
 
     body.resume main,
@@ -726,11 +727,11 @@ body.about main ul {
     }
 
     body.resume table tr td:nth-child(1){
-        padding: 20px 0px 7px 0px;
+        padding: 0px 0px 7px 0px;
     }
 
     body.resume table tr td:nth-child(2) {
-        padding: 0px;
+        padding: 0px 0px 20px 0px;
     }
     
     .skill {
@@ -753,15 +754,19 @@ body.about main ul {
         width: 100%;
     }
 
+    body.about main ul {
+        padding-left: 17px;
+    }
+
     body.about svg {
         width: 15em;
         height: 20em;
-        margin-top: 20px;
+        margin-top: 50px;
         /*margin-bottom: 20px;*/
     }
 
     body.about div p:nth-child(2) {
-        margin: 30px 0px;
+        margin: 20px 0px;
     }
 }
 
