@@ -756,7 +756,8 @@ body.about main ul {
     }
 
     nav ul li a {
-        font-size: 0.6em;
+        font-size: 0.7em;
+        margin-left: 25px;
     }
 
     body.front-page table tr td,
