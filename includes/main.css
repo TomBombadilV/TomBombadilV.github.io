@@ -140,8 +140,8 @@ body.about nav ul li:nth-child(3) a:hover {
 
 nav ul li a {
     margin-left: 40px;
-    font: 15px "KG Happy Solid", Arial, sans-serif;
     font: 14px "KG Happy Solid", Arial, sans-serif;
+    font-size: 0.7em;
     color: #777;
     text-transform: uppercase;
     -webkit-transition: color 0.2s linear;
@@ -181,6 +181,7 @@ body.front-page table td:nth-child(odd) {
 
 body.front-page table span {
     font: 50px 'KG Happy Solid', Arial, sans-serif;
+    font-size: 2em;
     padding: 0px 30px 0px 15px;
 }
 
@@ -201,8 +202,8 @@ body.front-page svg {
     opacity: 0.2;
     margin: 0 auto;
     margin-top: 30px;
-    /*width: 1400px;
-    width: 1250px;*/
+    /*width: 1400px;*/
+    width: 1250px;
 }
 
 body.front-page section:nth-child(2):before {
@@ -623,8 +624,31 @@ body.about main ul {
 @media only screen and (max-width: 700px) {
     body,
     body.front-page table tr td {
-        font-size: 25px;
-        line-height: 50px;
+        font-size: 18px;
+        line-height: 45px;
+    }
+
+    nav ul {
+        padding: 10px 20px;
+        line-height: 1.4em;
+    }
+
+    nav ul li a {
+        margin-left: 30px;
+        font-size: 0.6em;
+    }
+
+    body.front-page table {
+        max-width: 80%;
+        margin-top: 15vh;
+    }
+
+    body.front-page section:nth-child(2):before {
+        height: 0;
+    }
+
+    body.front-page svg {
+        width: 100vw;
     }
 }
 
