@@ -169,7 +169,8 @@ body.front-page table {
 
 body.front-page table td {
     font-size: 25px;
-    line-height: 60px;
+    /*line-height: 60px;*/
+    line-height: 2.4em;
     vertical-align: top;
     /* Stupid font boosting? */
     max-height: 10000px;
@@ -204,6 +205,7 @@ body.front-page svg {
     margin-top: 30px;
     /*width: 1400px;*/
     width: 1250px;
+    max-width: 100%;
 }
 
 body.front-page section:nth-child(2):before {
@@ -587,27 +589,33 @@ body.about main ul {
 }
 
 @media only screen and (max-width: 1200px) {
-    body {
-        font-size: 40px;
-        line-height: 100px;
+    body,
+    body.front-page table tr td {
+        font-size: 20px;
+    }
+
+    body,
+    body.front-page table tr td,
+    body.front-page table span {
+        line-height: 50px;
+    }
+
+    nav ul {
+        padding: 10px 50px;
+    }
+
+    nav ul li a {
+        margin-left: 40px;
+        font-size: 0.6em;
     }
 
     body.front-page table {
-        margin-top: 8vh;
-    }
-
-    body.front-page table tr td {
-        font-size: 40px;
-        line-height: 100px;
+        margin-top: 15vh;
     }
 
     body.front-page table tr td:nth-child(1),
     body.front-page table tr td:nth-child(2) {
         float: left;
-    }
-
-    body.front-page table tr td:nth-child(2) {
-        margin-top: 10px;
     }
 
     body.front-page table tr td:nth-child(3) {
@@ -617,15 +625,28 @@ body.about main ul {
     }
 
     body.front-page table td:nth-child(odd) {
-        padding-top: 10px;
+        padding-top: 0px;
+    }
+
+    body.front-page section:nth-child(2):before {
+        height: 45vh;
+    }
+
+    body.front-page svg {
+        width: 130vh;
     }
 }
 
 @media only screen and (max-width: 700px) {
     body,
     body.front-page table tr td {
-        font-size: 18px;
-        line-height: 45px;
+        font-size: 15px;
+    }
+
+    body,
+    body.front-page table tr td,
+    body.front-page table span {
+        line-height: 35px;
     }
 
     nav ul {
@@ -643,15 +664,27 @@ body.about main ul {
         margin-top: 15vh;
     }
 
-    body.front-page section:nth-child(2):before {
+    /*body.front-page section:nth-child(2):before {
         height: 0;
-    }
+    }*/
 
-    body.front-page svg {
-        width: 100vw;
+    body.front-page table span {
+        padding: 0px 10px;
     }
 }
 
+@media only screen and (max-width: 400px) {
+    body,
+    body.front-page table tr td {
+        font-size: 15px;
+    }
+
+    body,
+    body.front-page table tr td,
+    body.front-page table span {
+        line-height: 35px;
+    }
+}
 
 /* ================== CSS FOR PAGES BEFORE DEFINING VIEWPORT =============== */
 
