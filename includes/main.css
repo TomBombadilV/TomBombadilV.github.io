@@ -56,10 +56,8 @@
     /* Lighter yellow */
     /*--cream: #fcf8ee;*/
     --dark-cream: #fbf4ea;
-    /*--dark-cream: #fbf3e7;
-    --dark-cream: #f5eedc;
-    --dark-cream: #f5ebd2;*/
     --dark-cream: #f1eada;
+    --dark-cream: #f9efe7;
 }
 
 body {
@@ -585,12 +583,39 @@ body.about main ul {
 }
 
 @media only screen and (min-width: 1700px) {
+    body, body.front-page table tr td {
+        font-size: 1.5vw;
+    }
+
     body.front-page svg {
         width: 80%;
     }
 
     body.front-page section:nth-child(2):before {
         height: 30vw;
+    }
+}
+
+@media only screen and (max-width: 1700px) {
+    body,
+    body.front-page table tr td {
+        font-size: 22px;
+    }
+
+    body.front-page table {
+        margin-top: 12vh;
+    }
+
+    body.front-page section:nth-child(2):before {
+        height: 45vh;
+    }
+
+    /*body.front-page svg {
+        width: 120vh;
+    }*/
+
+    body.resume main, body.about main {
+        max-width: 70%;
     }
 }
 
@@ -611,6 +636,7 @@ body.about main ul {
 
     nav ul li a {
         margin-left: 40px;
+        font-size: 0.6em;
     }
 
     body.front-page table,
