@@ -50,11 +50,11 @@
     --bright-red: #ff4d4d;
     --dark-red: #ce2e00;
     --cream: #fffbf5;
-    --cream: #fffdf5;
+    /*--cream: #fffdf5;
     /* More yellow (IDE color lol) */
-    --cream: #fdf6e3;
+    /*--cream: #fdf6e3;
     /* Lighter yellow */
-    --cream: #fcf8ee;
+    /*--cream: #fcf8ee;*/
     --dark-cream: #fbf4ea;
     /*--dark-cream: #fbf3e7;
     --dark-cream: #f5eedc;
@@ -119,6 +119,7 @@ nav {
 nav ul {
     list-style: none;
     padding: 40px 60px;
+    /*margin: 0 auto;
     /*margin-top: 0px;*/
 }
 
@@ -666,7 +667,7 @@ body.about main ul {
     }
 
     nav ul {
-        padding: 10px 20px;
+        padding: 10px 30px;
         line-height: 1.4em;
     }
 
@@ -753,9 +754,10 @@ body.about main ul {
 
     nav ul {
         line-height: 1em;
+        padding: 10px 20px;
     }
 
-    nav ul li a {
+    nav ul li a {   
         font-size: 0.7em;
         margin-left: 25px;
     }
