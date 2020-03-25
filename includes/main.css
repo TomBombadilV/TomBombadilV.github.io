@@ -602,7 +602,7 @@ body.about main ul {
 
     body.front-page table tr td,
     body.front-page table span {
-        line-height: 50px;
+        line-height: 45px;
     }
 
     nav ul {
@@ -613,8 +613,18 @@ body.about main ul {
         margin-left: 40px;
     }
 
+    body.front-page table,
+    body.resume main,
+    body.about main {
+        max-width: 70%;
+    }
+
     body.front-page table {
         margin-top: 15vh;
+    }
+
+    header {
+        margin-top: 30px;
     }
 
     body.front-page table tr td:nth-child(1),
@@ -637,7 +647,19 @@ body.about main ul {
     }
 
     body.front-page svg {
-        width: 130vh;
+        width: 120vh;
+    }
+
+    body.about main div:nth-child(2) {
+        width: 65%;
+    }
+
+    body.about div p:nth-child(2) {
+        margin: 30px 0px;
+    }
+
+    body.about svg {
+        width: 100%;
     }
 }
 
@@ -645,7 +667,12 @@ body.about main ul {
     body.front-page table,
     body.resume main,
     body.about main {
-        max-width: 80%;
+        max-width: 75%;
+    }
+
+    body,
+    body.front-page table tr td {
+        font-size: 18px;
     }
 
     body.front-page section:nth-child(2):before {
@@ -690,11 +717,6 @@ body.about main ul {
 
     body.front-page section:nth-child(2):before {
         height: 30vh;
-
-        background: -moz-linear-gradient(left, var(--cream) 0%, var(--cream) 3%, rgba(252,248,238,0) 20%, rgba(252,248,238,0) 80%, var(--cream) 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(left, var(--cream) 0%,var(--cream) 3%,rgba(252,248,238,0) 20%,rgba(252,248,238,0) 80%,var(--cream) 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to right, var(--cream) 0%,var(--cream) 3%,rgba(252,248,238,0) 20%,rgba(252,248,238,0) 80%,var(--cream) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcf8ee', endColorstr='#fcf8ee',GradientType=1 ); /* IE6-9 */
     }
 
     body.front-page table span {
