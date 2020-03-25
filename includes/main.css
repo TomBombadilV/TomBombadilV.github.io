@@ -743,9 +743,3 @@ body.about main ul {
         font-size: 0.9em;
     }
 }
-
-@media only screen and (max-width: 500px) {
-    body.front-page table td {
-        line-height: 120px;
-    }
-}
