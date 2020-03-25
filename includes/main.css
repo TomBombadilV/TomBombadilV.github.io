@@ -67,6 +67,7 @@ body {
     color: black;
     font: 15px/20px Gotham, Arial, sans-serif;
     font: 20px/30px Gotham, Arial, sans-serif;
+    line-height: 1.5em;
     margin: 0px;
 
     -moz-animation: fadein 2s; /* Firefox */
@@ -94,6 +95,7 @@ img, svg, div, table {
 
 header {
     font: 35px 'KG Happy Solid', Arial, sans-serif;
+    font-size: 1.75em;
     /*text-align: center;*/
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -392,6 +394,7 @@ body.resume table tr td:nth-child(1) {
     font-weight: bold;
     font-family: 'KG Happy Solid', arial, sans-serif;
     font-size: 19px;
+    font-size: 0.95em;
     text-transform: uppercase;
     vertical-align: top;
     text-align: right;
@@ -449,8 +452,8 @@ body.resume table tr td:nth-child(2) {
     padding-left: 20px;
     color: var(--cream);
     font-family: 'KG Happy Solid', Arial, Helvetica, sans-serif;
-    font-size: 15px;  
     font-size: 13px;  
+    font-size: 0.65em;
 }
 
 /* "left" property is for slidein animation */
@@ -497,7 +500,13 @@ ul {
 
 .panel-title {
     font-size: 20px;
+    font-size: 1em;
     line-height: 30px;
+    line-height: 1.5em;
+}
+
+.panel-group {
+    margin-bottom: 0px;
 }
 
 .panel-group .panel-default {
@@ -586,7 +595,6 @@ body.about main ul {
         font-size: 20px;
     }
 
-    body,
     body.front-page table tr td,
     body.front-page table span {
         line-height: 50px;
@@ -617,7 +625,7 @@ body.about main ul {
     }
 
     body.front-page table td:nth-child(odd) {
-        padding-top: 0px;
+        padding-top: 3px;
     }
 
     body.front-page section:nth-child(2):before {
@@ -635,7 +643,6 @@ body.about main ul {
         font-size: 15px;
     }
 
-    body,
     body.front-page table tr td,
     body.front-page table span {
         line-height: 35px;
@@ -652,8 +659,12 @@ body.about main ul {
     }
 
     body.front-page table {
-        max-width: 80%;
         margin-top: 15vh;
+    }
+
+    body.front-page table,
+    body.resume main {
+        max-width: 80%;
     }
 
     body.front-page section:nth-child(2):before {
@@ -668,6 +679,43 @@ body.about main ul {
     body.front-page table span {
         padding: 0px 10px;
     }
+
+    header {
+        margin-bottom: 10px;
+    }
+
+    body.resume main,
+    body.about main {
+        margin-top: 50px;
+    }
+
+    body.resume table tr td:nth-child(1) {
+        font-size: 1em;
+    }
+
+    body.resume table tr td:nth-child(1) {
+        white-space: normal;
+        float: left;
+    }
+
+    body.resume table tr td:nth-child(2) {
+        display: block;
+       float: left;
+       width: 100%;
+       padding-top: 5px;
+    }
+
+    body.resume table tr td:nth-child(1){
+        padding: 20px 0px 7px 0px;
+    }
+
+    body.resume table tr td:nth-child(2) {
+        padding: 0px;
+    }
+    
+    .skill {
+        height: 3em;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -676,7 +724,6 @@ body.about main ul {
         font-size: 15px;
     }
 
-    body,
     body.front-page table tr td,
     body.front-page table span {
         line-height: 35px;
