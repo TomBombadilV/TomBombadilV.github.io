@@ -747,9 +747,14 @@ body.about main ul {
 }
 
 @media only screen and (max-width: 400px) {
-    body,
+    /*body,*/
     body.front-page table tr td {
         font-size: 18px;
+    }
+
+    body.front-page table tr td,
+    body.front-page table span {
+        line-height: 45px;
     }
 
     nav ul {
@@ -758,13 +763,8 @@ body.about main ul {
     }
 
     nav ul li a {   
-        font-size: 0.5em;
+        font-size: 0.7em;
         margin-left: 25px;
-    }
-
-    body.front-page table tr td,
-    body.front-page table span {
-        line-height: 45px;
     }
 
     body.front-page section:nth-child(2):before {
