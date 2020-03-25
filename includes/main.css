@@ -743,9 +743,9 @@ body.about main ul {
 
     body.resume table tr td:nth-child(2) {
         display: block;
-       float: left;
-       width: 100%;
-       padding-top: 5px;
+        float: left;
+        width: 100%;
+        padding-top: 5px;
     }
 
     body.resume table tr td:nth-child(1){
@@ -781,6 +781,7 @@ body.about main ul {
     }
 
     body.about svg {
+        margin: 0px;
         width: 15em;
         height: 20em;
         margin-top: 50px;
