@@ -340,6 +340,7 @@ body.about svg {
 }
 
 #california-outline {
+    margin-bottom: 15px;
     fill: none;
     stroke: rgba(0, 0, 0, 1);
     stroke-width: 3px;
