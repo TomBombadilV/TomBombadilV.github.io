@@ -339,6 +339,7 @@ body.front-page section:nth-child(2):before {
   }
 
 body.about svg {
+    margin: 0 auto;
     width: 300px;
     height: 350px;
 }
@@ -552,6 +553,7 @@ body.about main div:nth-child(3) {
 body.about main a {
     font-family: 'KG Happy Solid';
     font-size: 18px;
+    font-size: 0.9em;
 }
 
 body.about div p:nth-child(2) {
@@ -704,7 +706,7 @@ body.about main ul {
 
     body.resume main,
     body.about main {
-        margin-top: 30px;
+        margin-top: 40px;
     }
 
     body.resume table tr td:nth-child(1) {
@@ -744,10 +746,26 @@ body.about main ul {
     .skill-label {
         line-height: 40px;
     }
+
+    body.about main div:nth-child(2),
+    body.about main div:nth-child(3) {
+        display: block;
+        width: 100%;
+    }
+
+    body.about svg {
+        width: 15em;
+        height: 20em;
+        margin-top: 20px;
+        /*margin-bottom: 20px;*/
+    }
+
+    body.about div p:nth-child(2) {
+        margin: 30px 0px;
+    }
 }
 
 @media only screen and (max-width: 400px) {
-    /*body,*/
     body.front-page table tr td {
         font-size: 18px;
     }
@@ -769,6 +787,11 @@ body.about main ul {
 
     body.front-page section:nth-child(2):before {
         height: 15vh;
+    }
+
+    body.about svg {
+        width: 12em;
+        height: 15em;
     }
 }
 
