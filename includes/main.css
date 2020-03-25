@@ -103,6 +103,10 @@ ul li {
     list-style-type: circle;
 }
 
+p {
+    max-height: 10000px;
+}
+
 /* --------------------------- Navigation Bar ------------------------------ */
 nav {
     width: 100%;
@@ -167,6 +171,8 @@ body.front-page table td {
     font-size: 25px;
     line-height: 60px;
     vertical-align: top;
+    /* Stupid font boosting? */
+    max-height: 10000px;
 }
 
 body.front-page table td:nth-child(odd) {
@@ -607,6 +613,32 @@ body.about main ul {
     }
 }
 
+/* Collapse front page text into rows instead of table columns */
+@media only screen and (max-width: 1200px) {
+    body.front-page table span {
+        line-height: 50px;
+    }
+
+    body.front-page table tr td:nth-child(1),
+    body.front-page table tr td:nth-child(2) {
+        float: left;
+    }
+
+    body.front-page table tr td:nth-child(2) {
+        margin-top: 10px;
+    }
+
+    body.front-page table tr td:nth-child(3) {
+        display: block;
+        width: 100%;
+        float: left;
+    }
+
+    body.front-page table td:nth-child(odd) {
+        padding-top: 10px;
+    }
+}
+
 @media only screen and (max-width: 1000px) {
     nav {
         margin-top: 50px;
@@ -632,27 +664,8 @@ body.about main ul {
 
     body.front-page table td {
         font-size: 40px;
-        line-height: 120px;
+        line-height: 100px;
         vertical-align: 40px;
-    }
-
-    body.front-page table tr td:nth-child(1),
-    body.front-page table tr td:nth-child(2) {
-        float: left;
-    }
-
-    body.front-page table tr td:nth-child(2) {
-        margin-top: 10px;
-    }
-
-    body.front-page table tr td:nth-child(3) {
-        display: block;
-        width: 100%;
-        float: left;
-    }
-
-    body.front-page table td:nth-child(odd) {
-        padding-top: 10px;
     }
 
     body.front-page table span {
@@ -677,8 +690,8 @@ body.about main ul {
     }
 
     body.resume .panel-body li, body.resume td, .panel-title {
-        font-size: 40px;
-        line-height: 80px;
+        font-size: 35px;
+        line-height: 70px;
     }
 
     body.resume table {
@@ -728,5 +741,11 @@ body.about main ul {
     body.about main a {
         line-height: 70px;
         font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body.front-page table td {
+        line-height: 120px;
     }
 }
