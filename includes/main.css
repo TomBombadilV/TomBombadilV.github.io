@@ -455,6 +455,7 @@ body.resume table tr td:nth-child(2) {
     font-size: 13px;  
     font-size: 0.65em;
     line-height: 50px;
+    line-height: 3.846em;
 }
 
 /* "left" property is for slidein animation */
@@ -595,6 +596,10 @@ body.about main ul {
 
     body.front-page section:nth-child(2):before {
         height: 30vw;
+    }
+
+    body.resume main {
+        max-width: 65%;
     }
 }
 
@@ -837,6 +842,10 @@ body.about main ul {
 }
 
 @media only screen and (max-width: 400px) {
+    body {
+        font-size: 15px;
+    }
+
     body.front-page table tr td {
         font-size: 18px;
     }
